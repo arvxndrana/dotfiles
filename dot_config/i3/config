@@ -192,6 +192,10 @@ exec_always --no-startup-id feh --randomize --bg-fill ~/.wallpapers/ # To set wa
 exec_always --no-startup-id ibus-daemon # To change language input
 exec_always --no-startup-id /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 # To use superuser where necessary
 exec_always --no-startup-id setxkbmap -option caps:escape # To set capslock to escape
+exec_always --no-startup-id flameshot # To start flameshot for screenshots
+
+bindsym --release Print exec --no-startup-id flameshot screen
+bindsym --release Shift+Print exec --no-startup-id flameshot gui
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
